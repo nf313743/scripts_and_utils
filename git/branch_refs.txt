@@ -1,0 +1,4 @@
++:refs/heads/(master)
++:refs/heads/feature/(*)
++:refs/heads/release/(*)
++:refs/pull/(*/merge)
