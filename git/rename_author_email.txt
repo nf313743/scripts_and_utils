@@ -8,6 +8,8 @@ git change-commits GIT_AUTHOR_EMAIL "old@email.com" "new@email.com" HEAD~10..HEA
 
 git change-commits GIT_COMMITTER_EMAIL "old@example.com" "new@example.com"
 
+git change-commits GIT_COMMITTER_NAME "old" "new"
+
 You may have to use the -f flag.
 
 git push origin +yourbranch
