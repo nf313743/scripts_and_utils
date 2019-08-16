@@ -1,0 +1,77 @@
+1.  Not a serialized C++ object.  It is a serialized ASCII text file.
+	- This file contains the data for the simulation process.
+	
+2 & 3.	Data is assumed to be little endian.  It is transmitted 'Network format'
+		as L.E.  If the machine on the recieving end is Big endian, then byte reordering
+		is required.
+		
+		- Master node or Client node couold be both B.E.  Conversion would need to take place
+		at both ends due to default L.E format.
+		
+4.	- Check special cases before transmitting results back to master node.
+	- Note all special case can be represented in IEEE
+	- Include:
+		+/- 0
+		Denormalised 0
+		Find more.
+		
+	- If special cases cannot be handled should be represented to the nearest IEEE equivalent.
+	- This is just an idea.
+	
+5.  Current file format stores the a set of accumulated results(float) and a count(int)
+
+6.
+
+Deliverables:
+Draft Report - 19th March
+Final Report - 7th May
+Viva 14 - 25th May
+
+Milestones
+* Unit Tests to handle special cases.
+* Enviroment testing
+* 
+
+Time aside for learning/practical:
+	- 1. Identifying and dealing with all Floating point special cases all
+	- 2. Gain better understanding of version control (Git)
+	- 3. Research and identify particular problems that may occur with communications between different Endian machines.
+	- 4. Familiarisation with existing classes.  And current system.
+	- 5. Learning anything to do with Boost if applicable(Serialization)
+	- 6. Write code to handle endianness and special cases
+	- 7. Unit Testing learning - Boost
+	- 8. Test and deploy
+	- 9. Proposing new file format, work on creating new xml file format
+	- 10. Work on report draft
+	- 11. Finalise report
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,51 @@
+Generate new key: ssh-keygen -t rsa -C "nathanflynn01@gmail.com"
+
+git config --global user.name "Nathan"
+
+git config --global user.email "johnnyturbo3@gmail.com"
+
+make it colourful:
+git config --global color.diff auto
+git config --global color.status auto
+git config --global color.branch auto
+
+file .gitconfig stores all git info
+
+###############
+setup repository
+git init
+##############
+
+git status
+git add - add files to staging area
+git reset - remove from staging area
+git commit - pushes changes to repository
+git pull  -- Pulls new stuff and merges it to your repository.
+git commit 
+
+
+git clone git@github.com:username/Spoon-Knife.git
+
+git push origin master
+git add -u -- removes deleted files from commit(?)
+git commit -a -m 'Remove file'  --Skips need for staging, only files which are being tracked.
+
+git reset --hard   --Makes local repository same as server's
+
+
+
+It's all to do with line endings.
+git rm --cached -r .
+git reset --hard
+
+
+In .gitattributes, change text=auto to text=crlf
+
+For each file: git checkout <filename>
+
+git reset --hard
+
+git clean -f  to remove untracked files.
+git clean -df to remove untracked directories
+
+git submodule update

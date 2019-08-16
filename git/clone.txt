@@ -1,0 +1,1 @@
+clone -v --recurse-submodules --progress --branch rc_5.6.0.0 "git@git.tradar.com:backoffice.git" "D:/Dev/Gromit"
