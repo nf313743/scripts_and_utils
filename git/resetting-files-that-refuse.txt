@@ -1,0 +1,16 @@
+It's all to do with line endings.
+
+git rm --cached -r .
+git reset --hard
+
+
+In .gitattributes, change text=auto to text=crlf
+
+For each file: git checkout <filename>
+
+git reset --hard
+git submodule foreach --recursive git reset --hard
+git submodule update --init
+
+git clean -f  to remove untracked files.
+git clean -df to remove untracked directories

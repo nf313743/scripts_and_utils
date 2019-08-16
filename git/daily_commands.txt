@@ -1,0 +1,5 @@
+git checkout -b <new-branch>
+
+git merge --no-commit <branch> # Fast-forward commit on branch
+git merge --no-ff --no-commit <branch> # Without fast-forward.  Allow to specify which files to commit.
+git remote prune origin # Removes old, deleted remote branches.
