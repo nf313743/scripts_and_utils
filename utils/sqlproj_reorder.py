@@ -1,3 +1,8 @@
+def write_to_file(sortedList):
+    f = open('output.xml', 'w')
+    f.write(sortedList)
+    f.close()
+
 import os
 from pathlib import Path
 import xml.etree.ElementTree as ET
@@ -14,7 +19,8 @@ buildNodes = root.findall('./Build')
 
 sortedList = sorted(buildNodes, key=lambda node: node.attrib['Include'])
 
-for item in sortedList:
-    print(item.attrib['Include'])
+write_to_file(sortedList)
+
+
 
 print("End")
